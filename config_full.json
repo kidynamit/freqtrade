@@ -1,20 +1,21 @@
 {
-    "max_open_trades": 3,
+    "max_open_trades": 100,
     "stake_currency": "BTC",
-    "stake_amount": 0.05,
-    "fiat_display_currency": "USD",
-    "dry_run": false,
+    "stake_amount": 0.01,
+    "fiat_display_currency": "ZAR",
+    "dry_run": true,
     "ticker_interval": 5,
     "minimal_roi": {
-        "40":  0.0,
-        "30":  0.01,
-        "20":  0.02,
-        "0":  0.04
+        "50":  0.0,
+        "40":  0.004,
+        "30":  0.005,
+        "20":  0.0075,
+        "0":  0.01
     },
     "stoploss": -0.10,
     "unfilledtimeout": 600,
     "bid_strategy": {
-        "ask_last_balance": 0.0
+        "ask_last_balance": 1.0
     },
     "exchange": {
         "name": "bittrex",
