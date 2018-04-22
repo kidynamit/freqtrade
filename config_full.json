@@ -1,0 +1,72 @@
+{
+    "max_open_trades": 3,
+    "stake_currency": "BTC",
+    "stake_amount": 0.05,
+    "fiat_display_currency": "USD",
+    "dry_run": false,
+    "ticker_interval": 5,
+    "minimal_roi": {
+        "40":  0.0,
+        "30":  0.01,
+        "20":  0.02,
+        "0":  0.04
+    },
+    "stoploss": -0.10,
+    "unfilledtimeout": 600,
+    "bid_strategy": {
+        "ask_last_balance": 0.0
+    },
+    "exchange": {
+        "name": "bittrex",
+        "key": "a190e9e4386f4e438e0c8bb2ff811656",
+        "secret": "6182b9bf33524b2790cd9907ded88e72",
+        "pair_whitelist": [
+            "BTC_ETH",
+            "USDT_BTC",
+            "BTC_LBC",
+            "BTC_TRX",
+            "BTC_NEO",
+            "ETH_NEO",
+            "USDT_NEO",
+            "BTC_QTUM",
+            "ETH_QTUM",
+            "BTC_SC",
+            "ETH_SC",
+            "BTC_DGB",
+            "ETH_DGB",
+            "BTC_XMR",
+            "ETH_XMR",
+            "USDT_XMR",
+            "BTC_XRP",
+            "ETH_XRP",
+            "USDT_XRP",
+            "BTC_ADA",
+            "ETH_ADA",
+            "USDT_ADA",
+            "BTC_LTC",
+            "ETH_LTC",
+            "USDT_LTC",
+            "BTC_XVG",
+            "USDT_XVG",
+            "BTC_DCR"
+        ],
+        "pair_blacklist": [
+            "BTC_DOGE"
+        ]
+    },
+    "experimental": {
+        "use_sell_signal": false,
+        "sell_profit_only": false
+    },
+    "telegram": {
+        "enabled": false,
+        "token": "your_telegram_token",
+        "chat_id": "your_telegram_chat_id"
+    },
+    "initial_state": "running",
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "strategy": "DefaultStrategy",
+    "strategy_path": "/some/folder/"
+}
