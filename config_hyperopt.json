@@ -1,0 +1,96 @@
+{
+    "max_open_trades": 5,
+    "stake_currency": "BTC",
+    "stake_amount": 0.005,
+    "fiat_display_currency": "ZAR",
+    "dry_run": false,
+    "ticker_interval": 1,
+    "minimal_roi":  {
+	"0": 0.16999999999999998, 
+	"30": 0.08, 
+	"90": 0.01, 
+	"110": 0
+},
+    "adx": {
+        "enabled": true,
+        "value": 40.0
+    },
+    "fastd": {
+        "enabled": false
+    },
+    "green_candle": {
+        "enabled": false
+    },
+    "macd_below_zero": {
+        "enabled": true
+    },
+    "mfi": {
+        "enabled": false
+    },
+    "over_sar": {
+        "enabled": false
+    },
+    "roi_p1": 0.01,
+    "roi_p2": 0.07,
+    "roi_p3": 0.09,
+    "roi_t1": 20.0,
+    "roi_t2": 60.0,
+    "roi_t3": 30.0,
+    "rsi": {
+        "enabled": false
+    },
+    "stoploss": -0.4,
+    "trigger": {
+        "type": "lower_bb_tema"
+    },
+    "uptrend_long_ema": {
+        "enabled": false
+    },
+    "uptrend_short_ema": {
+        "enabled": false
+    },
+    "uptrend_sma": {
+        "enabled": false
+   },
+   "unfilledtimeout": 600,
+    "bid_strategy": {
+        "ask_last_balance": 1.0
+    },
+    "exchange": {
+        "name": "bittrex",
+        "key": "a190e9e4386f4e438e0c8bb2ff811656",
+        "secret": "6182b9bf33524b2790cd9907ded88e72",
+        "pair_whitelist": [
+            "BTC_LBC",
+            "BTC_TRX",
+            "BTC_NEO",
+            "BTC_QTUM",
+            "BTC_SC",
+            "BTC_DGB",
+            "BTC_XMR",
+            "BTC_XRP",
+            "BTC_ADA",
+            "BTC_LTC",
+            "BTC_XVG",
+            "BTC_DCR"
+        ],
+        "pair_blacklist": [
+            "BTC_DOGE"
+        ]
+    },
+    "experimental": {
+        "use_sell_signal": false,
+        "sell_profit_only": false
+    },
+    "telegram": {
+        "enabled": false,
+        "token": "your_telegram_token",
+        "chat_id": "your_telegram_chat_id"
+    },
+    "initial_state": "running",
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "strategy": "DefaultStrategy",
+    "strategy_path": "/some/folder/"
+}
