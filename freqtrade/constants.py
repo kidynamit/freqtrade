@@ -34,7 +34,8 @@ CONF_SCHEMA = {
             },
             'minProperties': 1
         },
-        'stoploss': {'type': 'number', 'maximum': 0, 'exclusiveMaximum': True},
+        'stoploss': {'type': 'number', 'maximum': 0.1, 'exclusiveMaximum': True},
+        'database': {'type': 'string'},
         'unfilledtimeout': {'type': 'integer', 'minimum': 0},
         'bid_strategy': {
             'type': 'object',

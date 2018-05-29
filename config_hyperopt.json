@@ -56,6 +56,7 @@
     "bid_strategy": {
         "ask_last_balance": 1.0
     },
+    "database" : "tradesv3.sqlite",
     "exchange": {
         "name": "bittrex",
         "key": "a190e9e4386f4e438e0c8bb2ff811656",
