@@ -44,7 +44,7 @@ def init(config: dict, engine: Optional[Engine] = None) -> None:
                                        poolclass=StaticPool,
                                        echo=False)
         else:
-            engine = create_engine('sqlite:///tradesv3.sqlite')
+            engine = create_engine('sqlite:///tradesv3.sqlite.eth')
 
     session = scoped_session(sessionmaker(bind=engine, autoflush=True, autocommit=True))
     Trade.session = session()

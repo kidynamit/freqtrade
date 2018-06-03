@@ -7,7 +7,7 @@ DYNAMIC_WHITELIST = 20  # pairs
 PROCESS_THROTTLE_SECS = 5  # sec
 TICKER_INTERVAL = 5  # min
 HYPEROPT_EPOCH = 100  # epochs
-RETRY_TIMEOUT = 30  # sec
+RETRY_TIMEOUT = 5  # sec
 DEFAULT_STRATEGY = 'DefaultStrategy'
 
 # Required json-schema for user specified config

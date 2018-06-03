@@ -1,10 +1,10 @@
 {
-    "max_open_trades": 100,
+    "max_open_trades": 5,
     "stake_currency": "BTC",
-    "stake_amount": 0.01,
+    "stake_amount": 0.005,
     "fiat_display_currency": "ZAR",
-    "dry_run": true,
-    "ticker_interval": 5,
+    "dry_run": false,
+    "ticker_interval": 1,
     "minimal_roi": {
         "50":  0.0,
         "40":  0.004,

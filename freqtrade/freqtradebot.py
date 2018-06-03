@@ -290,7 +290,10 @@ class FreqtradeBot(object):
         buy_limit = self.get_target_bid(exchange.get_ticker(pair))
         amount = stake_amount / buy_limit
 
-        order_id = exchange.buy(pair, buy_limit, amount)
+        try:
+            order_id = exchange.buy(pair, buy_limit, amount)
+        except:
+            return False
 
         stake_amount_fiat = self.fiat_converter.convert_amount(
             stake_amount,
@@ -468,7 +471,10 @@ class FreqtradeBot(object):
         :return: None
         """
         # Execute sell and update trade record
-        order_id = exchange.sell(str(trade.pair), limit, trade.amount)
+        try:
+            order_id = exchange.sell(str(trade.pair), limit, trade.amount)
+        except:
+            return False;
         trade.open_order_id = order_id
 
         fmt_exp_profit = round(trade.calc_profit_percent(rate=limit) * 100, 2)
