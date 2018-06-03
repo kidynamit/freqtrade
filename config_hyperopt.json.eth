@@ -1,0 +1,97 @@
+{
+    "max_open_trades": 2,
+    "stake_currency": "ETH",
+    "stake_amount": 0.05,
+    "fiat_display_currency": "ZAR",
+    "dry_run": false,
+    "ticker_interval": 1,
+    "minimal_roi":  {
+    "20": 0.07,
+    "45": 0.05,
+    "40": 0.06,
+    "110": 0.12
+    },
+    "adx": {
+        "enabled": true,
+        "value": 35.0
+    },
+    "fastd": {
+        "enabled": false
+    },
+    "green_candle": {
+        "enabled": false
+    },
+    "macd_below_zero": {
+        "enabled": true
+    },
+    "mfi": {
+        "enabled": false
+    },
+    "over_sar": {
+        "enabled": false
+    },
+    "roi_p1": 0.01,
+    "roi_p2": 0.05,
+    "roi_p3": 0.06,
+    "roi_t1": 20.0,
+    "roi_t2": 45.0,
+    "roi_t3": 40.0,
+    "rsi": {
+        "enabled": true,
+        "value": 30.0
+    },
+    "stoploss": -1000.0,
+    "unfilledtimeout": 600,
+    "bid_strategy": {
+        "ask_last_balance": 1.0
+    },
+    "trigger": {
+        "type": "lower_bb_tema"
+    },
+    "uptrend_long_ema": {
+        "enabled": false
+    },
+    "uptrend_short_ema": {
+        "enabled": false
+    },
+    "uptrend_sma": {
+        "enabled": false
+    },
+    "exchange": {
+        "name": "bittrex",
+        "key": "a190e9e4386f4e438e0c8bb2ff811656",
+        "secret": "6182b9bf33524b2790cd9907ded88e72",
+        "pair_whitelist": [
+"ETH_XRP",
+"ETH_LTC",
+"ETH_ADA",
+"ETH_XLM",
+"ETH_TRX",
+"ETH_NEO",
+"ETH_DASH",
+"ETH_XMR",
+"ETH_ETC",
+"ETH_QTUM",
+"ETH_OMG"
+        ],
+        "pair_blacklist": [
+            "ETH_DOGE"
+        ]
+    },
+    "experimental": {
+        "use_sell_signal": true,
+        "sell_profit_only": true
+    },
+    "telegram": {
+        "enabled": true,
+        "chat_id": "-295780608",
+        "token": "583882819:AAHJekKVnYcbg9UmQisgUcuh3j9Bh7sc7bA"
+
+    },
+    "initial_state": "running",
+    "internals": {
+        "process_throttle_secs": 5
+    },
+    "strategy": "CustomStrategy1",
+    "strategy_path": "/home/ubuntu/kidynamit/freqtrade-strategies/user_data/strategies/"
+}
