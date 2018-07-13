@@ -15,9 +15,10 @@ WORKDIR /freqtrade
 
 # Install dependencies
 COPY requirements.txt /freqtrade/
-RUN pip install -r requirements.txt
+RUN pip3 install -U pip
+RUN pip3 install -r requirements.txt
 
 # Install and execute
 COPY . /freqtrade/
-RUN pip install -e .
+RUN pip3 install -e .
 ENTRYPOINT ["freqtrade"]
