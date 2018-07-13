@@ -4,6 +4,8 @@
     "stake_amount": 0.05,
     "fiat_display_currency": "USD",
     "dry_run": false,
+    "custom_db": false,
+    "db_location" : "db/default.sqlite",
     "ticker_interval": 5,
     "minimal_roi": {
         "40":  0.0,
