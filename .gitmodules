@@ -1,0 +1,3 @@
+[submodule "freqtrade-strategies"]
+	path = freqtrade-strategies
+	url = github:kidynamit/freqtrade-strategies
