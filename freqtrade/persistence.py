@@ -36,15 +36,18 @@ def init(config: dict, engine: Optional[Engine] = None) -> None:
         if _CONF.get('dry_run', False):
             # the user wants dry run to use a DB
             if _CONF.get('dry_run_db', False):
-                engine = create_engine('sqlite:///tradesv3.dry_run.sqlite')
+                engine = create_engine('sqlite:///db/tradesv3.dry_run.sqlite')
             # Otherwise dry run will store in memory
             else:
                 engine = create_engine('sqlite://',
                                        connect_args={'check_same_thread': False},
                                        poolclass=StaticPool,
                                        echo=False)
+        elif _CONF.get('custom_database', False):
+            db_location = _CONF.get('db_location', "db/tradesv3.sqlite")
+            engine = create_engine('sqlite:///{}'.format(db_location))
         else:
-            engine = create_engine('sqlite:///tradesv3.sqlite.eth')
+            engine = create_engine('sqlite:///db/default.sqlite')
 
     session = scoped_session(sessionmaker(bind=engine, autoflush=True, autocommit=True))
     Trade.session = session()

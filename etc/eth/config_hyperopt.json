@@ -4,12 +4,14 @@
     "stake_amount": 0.05,
     "fiat_display_currency": "ZAR",
     "dry_run": false,
+    "custom_db": true,
+    "db_location" : "db/tradesv3.eth.sqlite",
     "ticker_interval": 1,
     "minimal_roi":  {
-    "20": 0.07,
-    "45": 0.05,
-    "40": 0.06,
-    "110": 0.12
+		"0": 0.16999999999999998,
+		"05": 0.08,
+		"10": 0.01,
+		"20": 0
     },
     "adx": {
         "enabled": true,
@@ -40,7 +42,7 @@
         "enabled": true,
         "value": 30.0
     },
-    "stoploss": -1000.0,
+    "stoploss": -0.01,
     "unfilledtimeout": 600,
     "bid_strategy": {
         "ask_last_balance": 1.0
@@ -59,20 +61,20 @@
     },
     "exchange": {
         "name": "bittrex",
-        "key": "a190e9e4386f4e438e0c8bb2ff811656",
-        "secret": "6182b9bf33524b2790cd9907ded88e72",
+        "key": "a71a99b33a4d472d8aaca1726666c765",
+        "secret": "6b4333829bb54537a1e13b9021c904b6",
         "pair_whitelist": [
-"ETH_XRP",
-"ETH_LTC",
-"ETH_ADA",
-"ETH_XLM",
-"ETH_TRX",
-"ETH_NEO",
-"ETH_DASH",
-"ETH_XMR",
-"ETH_ETC",
-"ETH_QTUM",
-"ETH_OMG"
+            "ETH_XRP",
+            "ETH_LTC",
+            "ETH_ADA",
+            "ETH_XLM",
+            "ETH_TRX",
+            "ETH_NEO",
+            "ETH_DASH",
+            "ETH_XMR",
+            "ETH_ETC",
+            "ETH_QTUM",
+            "ETH_OMG"
         ],
         "pair_blacklist": [
             "ETH_DOGE"
@@ -83,9 +85,9 @@
         "sell_profit_only": true
     },
     "telegram": {
-        "enabled": true,
-        "chat_id": "-295780608",
-        "token": "583882819:AAHJekKVnYcbg9UmQisgUcuh3j9Bh7sc7bA"
+        "enabled": false,
+        "chat_id": "583882819",
+        "token":"583882819:AAHJekKVnYcbg9UmQisgUcuh3j9Bh7sc7bA"
 
     },
     "initial_state": "running",
@@ -93,5 +95,5 @@
         "process_throttle_secs": 5
     },
     "strategy": "CustomStrategy1",
-    "strategy_path": "/home/ubuntu/kidynamit/freqtrade-strategies/user_data/strategies/"
+    "strategy_path": "freqtrade-strategies/user_data/strategies/"
 }

@@ -19,8 +19,8 @@
     },
     "exchange": {
         "name": "bittrex",
-        "key": "a190e9e4386f4e438e0c8bb2ff811656",
-        "secret": "6182b9bf33524b2790cd9907ded88e72",
+        "key": "a71a99b33a4d472d8aaca1726666c765",
+        "secret": "6b4333829bb54537a1e13b9021c904b6",
         "pair_whitelist": [
             "BTC_LBC",
             "BTC_TRX",

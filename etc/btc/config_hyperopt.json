@@ -4,12 +4,14 @@
     "stake_amount": 0.005,
     "fiat_display_currency": "ZAR",
     "dry_run": false,
+    "custom_db": true,
+    "db_location" : "db/tradesv3.btc.sqlite",
     "ticker_interval": 1,
     "minimal_roi":  {
-    "20": 0.17,
-    "45": 0.15,
-    "40": 0.16,
-    "110": 0.12
+        "0": 0.16,
+        "05": 0.05,
+        "15": 0.01,
+        "20": 0
     },
     "adx": {
         "enabled": true,
@@ -31,16 +33,16 @@
         "enabled": false
     },
     "roi_p1": 0.01,
-    "roi_p2": 0.05,
-    "roi_p3": 0.06,
-    "roi_t1": 20.0,
+    "roi_p2": 0.04,
+    "roi_p3": 0.11,
+    "roi_t1": 100.0,
     "roi_t2": 45.0,
-    "roi_t3": 40.0,
+    "roi_t3": 20.0,
     "rsi": {
         "enabled": true,
         "value": 30.0
     },
-    "stoploss": -1000.0,
+    "stoploss": -0.01,
     "unfilledtimeout": 600,
     "bid_strategy": {
         "ask_last_balance": 1.0
@@ -59,8 +61,8 @@
     },
     "exchange": {
         "name": "bittrex",
-        "key": "a190e9e4386f4e438e0c8bb2ff811656",
-        "secret": "6182b9bf33524b2790cd9907ded88e72",
+        "key": "a71a99b33a4d472d8aaca1726666c765",
+        "secret": "6b4333829bb54537a1e13b9021c904b6",
         "pair_whitelist": [
             "BTC_LBC",
             "BTC_TRX",
@@ -84,8 +86,8 @@
         "sell_profit_only": true
     },
     "telegram": {
-        "enabled": true,
-        "chat_id": "-310976776",
+        "enabled": false,
+        "chat_id": "579762211",
         "token": "579762211:AAEWQcAqlbuBqB4tNYIHVPDFjLgKee0dxjk"
     },
     "initial_state": "running",
@@ -93,5 +95,5 @@
         "process_throttle_secs": 5
     },
     "strategy": "CustomStrategy2",
-    "strategy_path": "/home/ubuntu/kidynamit/freqtrade-strategies/user_data/strategies/"
+    "strategy_path": "freqtrade-strategies/user_data/strategies/"
 }
